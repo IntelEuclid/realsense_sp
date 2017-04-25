@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>realsense_sp</name>
+  <version>0.1.0</version>
+  <description>ROS package for the RealSense SP middleware</description>
+
+  <maintainer email="majd.srour@intel.com">Majd Srour</maintainer>
+
+  <license>BSD 3-clause</license>
+
+  <url type="website">TODO</url>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>nodelet</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>cv_bridge</depend>
+  <depend>message_filters</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>message_generation</depend>
+  <depend>rostest</depend>
+  <depend>pkg-config</depend>
+  <depend>realsense_camera</depend>
+  <depend>tf</depend>
+
+
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+  </export>
+
+</package>

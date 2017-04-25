@@ -1,0 +1,8 @@
+<launch>
+  <arg name="enable_relocalization"       default="true" />
+  <param name="sp/enable_relocalization"       type="bool" value="$(arg enable_relocalization)" />
+  <node pkg="nodelet" type="nodelet" name="manager" args="manager" output="screen" />
+  <node pkg="nodelet" type="nodelet" name="sp"
+    args="load realsense_sp/SPNodelet manager"  >
+  </node>
+</launch>
